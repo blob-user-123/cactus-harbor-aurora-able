@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --color-bg: #0e0d0b;
+  --color-surface: #171511;
+  --color-raised: #221f1a;
+  --color-paper: #f4efe6;
+  --color-mute: #9c9488;
+  --color-line: #3a342b;
+  --color-brass: #e0b15a;
+  --color-ink: #14120e;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html {
+    background: var(--color-bg);
+    color: var(--color-paper);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    min-height: 100vh;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+@keyframes latch-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+
+.latch-pulse {
+  animation: latch-pulse 1.6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .latch-pulse {
+    animation: none;
+  }
+}
