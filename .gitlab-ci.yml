@@ -1,0 +1,34 @@
+# Auto DevOps with the impossible stages disabled.
+#
+# The app is a Vite/TanStack Start SSR app deployed to Vercel, not to a
+# Kubernetes cluster. Stock Auto DevOps runs DAST plus review/deploy jobs
+# that need a cluster and a live target URL, so they fail with
+# "Missing required configuration variable: DAST_TARGET_URL" (no
+# environment_url.txt is ever produced). Keep the full template (build,
+# test, and the allow-failure security scanners all work) and turn off only
+# the jobs that can never succeed here.
+
+include:
+  - template: Auto-DevOps.gitlab-ci.yml
+
+# No Kubernetes cluster is attached, so there is nothing to deploy to and no
+# running target for DAST to scan. Disable every deploy/DAST job.
+dast:
+  rules:
+    - when: never
+
+dast_environment_deploy:
+  rules:
+    - when: never
+
+stop_dast_environment:
+  rules:
+    - when: never
+
+review:
+  rules:
+    - when: never
+
+production:
+  rules:
+    - when: never
