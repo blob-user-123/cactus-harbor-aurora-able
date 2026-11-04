@@ -439,6 +439,25 @@ export function LatchApp({ initial }: { initial: CatalogResult }) {
       </p>
 
       <section className="mt-6 rounded-xl border border-line bg-surface p-4 sm:p-5">
+        <h2 className="font-display text-2xl text-paper italic">On your computer</h2>
+        <p className="mt-2 max-w-2xl text-sm leading-relaxed text-mute">
+          This page checks the shop from the cloud, and it stops when you leave. Download Latch to run the same
+          alarm on your PC — your network, your notifications, and it keeps watching after this chat is closed.
+        </p>
+        <a
+          href="/latch-for-your-pc.zip"
+          download="Latch.zip"
+          className="mt-4 inline-flex min-h-11 items-center rounded-lg bg-brass px-4 text-sm font-semibold text-ink"
+        >
+          Download for your PC
+        </a>
+        <p className="mt-3 text-sm text-mute">
+          Unzip it, then double-click Start Latch. Install the free Node.js if your computer asks. Windows uses
+          Start Latch.bat. Mac uses Start Latch.command.
+        </p>
+      </section>
+
+      <section className="mt-6 rounded-xl border border-line bg-surface p-4 sm:p-5">
         <div className="flex flex-wrap items-center gap-3">
           <span
             className={`inline-block size-2.5 rounded-full ${prefs.armed ? "bg-brass latch-pulse" : "bg-line"}`}

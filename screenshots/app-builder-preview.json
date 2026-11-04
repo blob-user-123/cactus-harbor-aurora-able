@@ -7,8 +7,8 @@
       "status": 200,
       "title": "Latch",
       "hasCanvas": false,
-      "bodyTextLen": 1524,
-      "bodyTextHash": "313a9212870926eabd7e841eec717049ca470e053936205d747fecd5fa360c55",
+      "bodyTextLen": 1876,
+      "bodyTextHash": "9bde243751c8f6a0974002702c3256f8038c0f15c8cb58629f21ca68d6cdea2c",
       "bodyTextPrefix": "CERBERUS KNIVES Latch Open the shop Aurelius is sold out. A norm",
       "horizontalOverflow": false,
       "consoleErrors": [],
@@ -21,8 +21,8 @@
       "status": 200,
       "title": "Latch",
       "hasCanvas": false,
-      "bodyTextLen": 1524,
-      "bodyTextHash": "0d6f86ce0bfc6e8dc3e0594d5e2b04e03db5356812059c6516450fc68dd706a2",
+      "bodyTextLen": 1897,
+      "bodyTextHash": "6f74aaaa1939960cf1066aa3f2ae02583c755831e95a8e1f328d05691b60392f",
       "bodyTextPrefix": "CERBERUS KNIVES Latch Open the shop Aurelius is sold out. A norm",
       "horizontalOverflow": false,
       "consoleErrors": [],
@@ -30,9 +30,7 @@
       "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
     }
   },
-  "brandWarnings": [
-    "BRAND NOTE: no custom public/og.jpg — the platform will serve the og.grok.me placeholder. Custom cards are the default for games of every kind (DOM board/word games included), whimsical apps, creative tools, and brand-forward pages — only plain utilities (converters, CRUD trackers, admin dashboards) keep the placeholder. If this app is not a plain utility, finish the brand-asset pass per /workspace/.grok/skills/og/SKILL.md."
-  ],
+  "brandWarnings": [],
   "authWarnings": [],
   "verdictFile": "/workspace/screenshots/app-builder-preview.json"
 }
